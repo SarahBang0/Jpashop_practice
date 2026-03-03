@@ -1,7 +1,6 @@
 package jpabook.jpashop_practice.service;
 
 import jpabook.jpashop_practice.domain.Member;
-import jpabook.jpashop_practice.exception.NotFoundMemberException;
 import jpabook.jpashop_practice.repository.MemberRepositroy;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -37,7 +36,7 @@ public class MemberService {
     }
 
     // 전체 회원 조회
-    public List<Member> findAll() {
+    public List<Member> findMembers() {
         return memberRepositroy.findAll();
     }
 
